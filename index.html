@@ -3,10 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/style.css">
     <title>Cowapi</title>
   </head>
   <body>
     <div id="root"></div>
+    <!-- Страница заказа -->
+    <section class="order-section">
+      <!-- Верхнее меню -->
+      <div class="order-section__nav-container">
+        <div class="order-section__nav-menu">
+          <ul class="order-section__menu-list">
+          <img src="/src/img/ic_personal.svg" alt="user" class="order-section__user-icon">
+            <li class="order-section__menu-item">Name Surname</li>
+            <li class="order-section__menu-item">CowAPI</li>
+            <li class="order-section__menu-item">Close shift</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Заголовок и кнопка выхода -->
+      <div class="order-section__tittle-button">
+        <!-- Заголовок -->
+        <div class="order-section__title-box">
+          <h1 class="order-section__title">Orders</h1>
+        </div>
+        <!-- Кнока выхода -->
+          <button class="order-section__button-exit button">Exit</button>
+      </div>
+      
+
+      <!-- Таблица заказов -->
+      <div class="order-section__table-box">
+        <table class="order-section__table">
+          <tr>
+            <th>№</th>
+            <th>Cost</th>
+            <th>Order</th>
+            <th>Waiter</th>
+            <th>Date</th>
+            <th>Mark</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Нижняя часть с кнопками -->
+      <div class="order-section__lower-box">
+        <div class="order-section__lower-items">
+          <button class="order-section__bitton-delete">Delete</button>
+          <button class="order-section__print-delete">Print</button>
+        </div>
+      </div>
+    </section>
+    <button aria-label = "Закрыть" type = "button">
+      <svg  viewBox = "0 0 24 24">
+        <path d = "M19 6.41L17.59 5 12 10,59 6,41 5 5 6,41 10,59 12 5 17,59 6,41 19 12 13,41 17,59 19 19 1 7,59 13,41 12 19 6.41z"/>
+      </svg>
+    </button>
     <script type="module" src="/src/app/main.tsx"></script>
   </body>
 </html>
